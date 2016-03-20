@@ -58,13 +58,6 @@ window.addEventListener('load', function() {
 		start.addEventListener('click', stop);
 	}
 	
-	var ponovnoZazeni = function(event) {
-		ustavi = false;
-		document.querySelector("#start").innerHTML = "Zaženi !!!!stroboskop";
-		document.querySelector("#start").removeEventListener('click', ponovnoZazeni);
-		zagon(event);
-	}
-	
 	document.querySelector("#start").addEventListener('click', zagon);
 	
 });
