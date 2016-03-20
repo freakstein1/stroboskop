@@ -6,6 +6,11 @@
     <link rel="stylesheet" type="text/css" href="stili.css">
     <script src="skripta.js"></script>
     <script src="jscolor.js"></script>
+    <script>
+    function delElem(elementID) {
+	    document.getElementById(elementID).innerHTML = "";
+	}
+    </script>
 </head>
 <body>
 
@@ -18,10 +23,10 @@
 				<p style="text-align:right;">Izberi barve:</p>
 			</td>
 			<td style="width: calc(100% - 20px);">
-				<span id="barve"></span> 
+				<span id="barve"></span>
 				<button id="novaBarva" class="senca rob">Dodaj barvo</button>
 				<span id="barve"></span> 
-				<button id="odstraniBarve" class="senca rob"/>Odstrani barve</button>
+				<button id="odstraniBarve" onclick="delElem('barve')" class="senca rob"/>Odstrani barve</button>
 			</td>
 			<td rowspan="2" style="width: 300px;">
 				<button id="start" class="senca rob">Zaženi stroboskop</button>
